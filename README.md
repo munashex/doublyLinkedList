@@ -1,4 +1,4 @@
-*doublyLinkedList
+DoublyLinkedList
 -push 
 -pop
 -shift
