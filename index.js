@@ -41,6 +41,21 @@ class Node{
       this.length-- 
       return poppedNode
   }
+      
+       shift() {
+    let newHead = this.head 
+    if(this.length === 0) return null 
+    if(this.length === 1){
+        this.head = null
+        this.tail = null
+    }else {
+      this.head = newHead.next 
+      this.head.prev = null 
+      newHead.next = null 
+    }
+    this.length-- 
+    return newHead
+}
   
   }
   
