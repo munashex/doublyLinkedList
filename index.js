@@ -42,10 +42,9 @@ class Node{
       return poppedNode
   }
       
-       shift() {
+shift() {
     let newHead = this.head 
-    if(this.length === 0) return null 
-    if(this.length === 1){
+    if(this.length === 0 || this.length === 1) {
         this.head = null
         this.tail = null
     }else {
