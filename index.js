@@ -42,19 +42,22 @@ class Node{
       return poppedNode
   }
       
-shift() {
-    let newHead = this.head 
-    if(this.length === 0 || this.length === 1) {
-        this.head = null
-        this.tail = null
-    }else {
-      this.head = newHead.next 
-      this.head.prev = null 
-      newHead.next = null 
-    }
-    this.length-- 
-    return newHead
-}
+ shift() {
+   let newHead = this.head  
+
+   if(!this.head) return null 
+
+   if(this.length === 1){
+     this.head = null
+     this.tail = null
+   }else {
+     this.head = newHead.next 
+     this.head.prev = null 
+     newHead.next = null
+   }
+   this.length-- 
+   return newHead
+ }
   
   }
   
