@@ -1,4 +1,4 @@
-DoublyLinkedList
+doublyLinkedList
 -push 
 -pop
 -shift
@@ -8,3 +8,4 @@ DoublyLinkedList
 -remove 
 -insertion 
 -reverse
+-time complexity 
